@@ -1,0 +1,18 @@
+{
+  "name": "foundationpress",
+  "version": "5.5.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.17.0",
+    "node-sass": "~1.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olefredrik/FoundationPress.git"
+  }
+}

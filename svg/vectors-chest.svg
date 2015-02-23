@@ -1,0 +1,21 @@
+<svg id="svg-source" height="0" version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute;display:none;">
+
+<symbol id="ruche" x="0px" y="0px" viewBox="5.0 -10.0 100.0 135.0" preserveAspectRatio="xMinYMin meet">
+<g>
+<path d="M83.9,87.2v-2.6h-1.5V64.8H16.6v19.8h-1.3v2.6h2.8l-4.5,10.3h6.4l4.5-10.3h51.1l4.5,10.3h6.4L82,87.2H83.9z M62.4,84.7H37.1  v-3.3h25.3V84.7z"/>
+<rect x="16.8" y="43.8" width="65.8" height="20.4"/>
+<polygon fill="none" points="50.4,5.6 49,5.6 11.8,24.6 14.3,24.6 49.7,6.2 85.2,24.6 87.4,24.6 50.4,5.7 "/>
+<path d="M55.2,5.6h5.5V2.9H38.7v2.7H44L9.4,23.3l1,2l1.2-0.6L17,43.1h65.3l5.3-18.4l1.5,0.8l1-2L55.2,5.6z M49.6,24  c-2.9,0-5.2-2.4-5.2-5.2c0-2.9,2.4-5.2,5.2-5.2c2.9,0,5.2,2.4,5.2,5.2C54.8,21.6,52.5,24,49.6,24z M85.2,24.6L49.7,6.2L14.3,24.6  h-2.4L49,5.6h1.4l0,0l37,18.9H85.2z"/>
+</g>
+</symbol>
+
+<symbol id="alveole" x="0px" y="0px" viewBox="5.0 -10.0 100.0 135.0" preserveAspectRatio="xMinYMin meet">
+	<g>
+	<polygon points="13.5,29.9 13.5,70.8 48.9,91.3 84.4,70.8 84.4,29.9 48.9,9.4  "/>
+	<path d="M48.9,2.5L7.5,26.4v47.9l41.4,23.9l41.4-23.9V26.4L48.9,2.5z M86.4,72L48.9,93.6L11.5,72V28.8L48.9,7.1l37.4,21.6V72z"/>
+</g>
+</symbol>
+
+</svg>

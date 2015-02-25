@@ -38,29 +38,29 @@ $('.galerie').magnificPopup({
 });
 
 // SKROLLR
-    var s = skrollr.init();
+//    var s = skrollr.init();
 
 // ANIMSITION
-$('.animsition').animsition({
+// $('.animsition').animsition({
   
-    inClass               :   'fade-in-up-sm',
-    outClass              :   'fade-out-up-lg',
-    inDuration            :    1500,
-    outDuration           :    1500,
-    linkElement           :   '.top-bar a',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+//     inClass               :   'fade-in-up-sm',
+//     outClass              :   'fade-out-up-lg',
+//     inDuration            :    1500,
+//     outDuration           :    1500,
+//     linkElement           :   '.top-bar a',
+//     // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+//     loading               :    true,
+//     loadingParentElement  :   'body', //animsition wrapper element
+//     loadingClass          :   'animsition-loading',
+//     unSupportCss          : [ 'animation-duration',
+//                               '-webkit-animation-duration',
+//                               '-o-animation-duration'
+//                             ],
+//     //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+//     //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
     
-    overlay               :   false,
+//     overlay               :   false,
     
-    overlayClass          :   'animsition-overlay-slide',
-    overlayParentElement  :   'body'
-  });
+//     overlayClass          :   'animsition-overlay-slide',
+//     overlayParentElement  :   'body'
+//   });

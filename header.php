@@ -34,7 +34,7 @@
 	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
 	<?php include("svg/vectors-chest.svg"); ?>
-<div class="animsition">
+<!-- <div class="animsition"> -->
 	<div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
 	

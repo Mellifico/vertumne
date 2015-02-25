@@ -65,7 +65,7 @@ module.exports = function(grunt) {
           'bower_components/magnific-popup/dist/jquery.magnific-popup.js',
           'bower_components/skrollr/src/skrollr.js',
           'bower_components/FitText.js/jquery.fittext.js',
-          'bower_components/animsition/dist/js/jquery.animsition.js',
+          // 'bower_components/animsition/dist/js/jquery.animsition.js',
           
           // Using all of your custom js files
           'js/custom/*.js'

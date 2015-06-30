@@ -1,41 +1,32 @@
 <?php get_header(); ?>
-
+<?php do_action('foundationPress_before_content'); ?>
 <div class="wrapper brand CoverImage" style="background-image:url(<?php header_image(); ?>);">
-<div class="row pattern-cube">
-<div class="medium-4 large-4 columns">
-	
-</div>
-	<div class="medium-8 large-8 columns dark">
+<div class="row">
+
+	<div class="medium-8 large-8 columns">
 		<header>
-			<h1><?php bloginfo( 'name' ); ?></h1>	
-			<h2 id="big" class="lettres"><?php bloginfo( 'description' ); ?></h2>
-			<h3><small><?php _e('Edited by', 'FoundationPress'); ?> <a href="mailto:<?php bloginfo( 'admin_email' ); ?>"><?php bloginfo( 'admin_email' ); ?></a></small></h3>
+			<?php 
+				$post_accueil = get_post(1030);
+				$texte_accueil = $post_accueil -> post_content;
+				$img_accueil = get_the_post_thumbnail( $post_accueil -> ID, 'full' );;
+				echo $texte_accueil;
+			?>	
 		</header>
+	</div>
+	<div class="medium-4 large-4 columns">
+			<?php echo $img_accueil; ?>
 	</div>
 </div>
 </div>
 
 <div class="wrapper bg-dark">
 
-	<?php if ( have_posts() ) : ?>
-
-		<?php do_action('foundationPress_before_content'); ?>
-
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile; ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-
-	<?php endif;?>
 
 
-	<?php do_action('foundationPress_after_content'); ?>
 
 </div>
-
-	</div>
+<?php do_action('foundationPress_after_content'); ?>
+</div>
 </div>
 
 <?php get_footer(); ?>

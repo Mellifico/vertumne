@@ -1,0 +1,2 @@
+Header add Cache-Control "max-age=1"
+ExpiresByType text/css "access plus 0 seconds"

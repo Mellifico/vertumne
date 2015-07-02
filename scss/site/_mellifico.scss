@@ -4,10 +4,7 @@
 }
 .wrapper {
 	position: relative;
-	padding: rem-calc(20) 0;
-}
-.wrapper.brand {
-	padding: 0;
+	padding: rem-calc(40) 0;
 }
 .top-bar svg {
 	width: 1.8rem;
@@ -15,4 +12,79 @@
 	position: relative;
 	margin: 0;
 	padding: 0;
+}
+.calendas-bold,
+ b,
+strong {
+font-family: $font-family-serif-bold;
+}
+.calendas-italic,
+ i,
+em {
+font-family: $font-family-serif-italic;
+}
+.ligatures {
+-moz-font-feature-settings: "liga", "dlig", "swsh", "clig", "calt";
+       -ms-font-feature-settings: "liga", "dlig", "swsh", "clig", "calt";
+          -webkit-font-feature-settings: "liga", "dlig", "swsh", "clig", "calt";
+            font-feature-settings: "liga", "dlig", "swsh", "clig", "calt";
+}
+.hyphen {
+    text-align: justify;                
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-chars: 6 3 2;
+    -webkit-hyphenate-limit-zone: 2.5em; 
+    -webkit-hyphenate-limit-last: column;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-chars: 6 3 2;
+    -moz-hyphenate-limit-zone: 2.5em;
+    -moz-hyphenate-limit-last: column;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-chars: 6 3 2;
+    -ms-hyphenate-limit-zone: 2.5em; 
+    -ms-hyphenate-limit-last: column;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-chars: 6 3 2;
+    hyphenate-limit-zone: 2.5em; 
+    hyphenate-limit-last: column;
+}
+.smallcaps { 
+font-variant: small-caps;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.bg-text-padding {
+	padding: rem-calc(20); 
+}
+a.outline:link, a.outline:visited, a.outline:focus, a.outline:active {
+  outline-width: 1px;
+  outline-style: dotted;
+  outline-offset: 1px;
+      -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out; 
+       -o-transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out; 
+}
+a.outline:link {
+    outline-color: transparent;
+}
+a.outline:visited {
+    outline-color: $violet;
+} 
+a.outline:hover {
+  outline-width: 1px;
+    outline-style: solid;
+ outline-color: $base03;
+ outline-offset: 10px;
+}   
+a.outline:focus  {
+  outline-color: $yellow;
+}
+a.outline:active {
+   outline-color: $red;
 }

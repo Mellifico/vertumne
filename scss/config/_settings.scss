@@ -86,9 +86,44 @@ $include-html-global-classes: $include-html-classes;
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+/* Typographie --------------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'calendas-regular';
+  src: url('../fontes/calendas_plus.eot');
+  src: local('?'),
+    url("../fontes/calendas_plus.woff") format("woff"),
+    url("../fontes/calendas_plus.otf") format("opentype"),
+    url("../fontes/calendas_plus.svg#calendas") format("svg");
+     font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+  font-family: 'calendas-bold';
+  src: url('../fontes/calendas_plus_bold.eot');
+  src: local('?'),
+    url("../fontes/calendas_plus_bold.woff") format("woff"),
+    url("../fontes/calendas_plus_bold.otf") format("opentype"),
+    url("../fontes/calendas_plus_bold.svg#calendas") format("svg");
+     font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+  font-family: 'calendas-italic';
+  src: url('../fontes/calendas_plus_italic.eot');
+  src: local('?'),
+    url("../fontes/calendas_plus_italic.woff") format("woff"),
+    url("../fontes/calendas_plus_italic.otf") format("opentype"),
+    url("../fontes/calendas_plus_italic.svg#calendas") format("svg");
+     font-weight: normal;
+    font-style: normal;
+  }
+
 // We use these to define default font stacks
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif: calendas-regular, Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif-bold: calendas-bold, Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif-italic: calendas-italic, Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
@@ -141,31 +176,11 @@ $success-color: $green;
 $warning-color: $red;
 $info-color: $yellow;
 
-@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3) 
-{
-    background-color:$rebase03;
-    color:$rebase0;
-    fill:$rebase0;
-    * { color:$rebase0; fill:$rebase0; }
-    h1,h2,h3,h4,h5,h6 { color:$rebase1; fill:$rebase1; border-color: $rebase0; }
-    a, a:active, a:visited { color: $rebase1; fill: $rebase1; }
-}
-@mixin accentize($accent) {
-    a, a:active, a:visited, code.url { color: $accent; fill: $accent; }
-    h1,h2,h3,h4,h5,h6 {color:$accent; fill:$accent;}
-}
-/* light is default mode, so pair with general html definition */
-.light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
-.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
-html * {
-    color-profile: sRGB;
-    rendering-intent: auto;
-}
 
 // We use these to control various global styles
 $body-bg: $base2;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-color: $base02;
+$body-font-family: $font-family-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -237,7 +252,7 @@ $body-bg: $base2;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $base01;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -1403,61 +1418,61 @@ $body-bg: $base2;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: $base03;
+$topbar-bg-color: $base2;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+$topbar-height: rem-calc(55);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(18);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $base03;
-$topbar-dropdown-link-color: $base3;
-$topbar-dropdown-link-bg: $base03;
-$topbar-dropdown-link-bg-hover: $base03;
+$topbar-dropdown-bg: $base3;
+$topbar-dropdown-link-color: $base01;
+$topbar-dropdown-link-bg: $base3;
+$topbar-dropdown-link-bg-hover: $green;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $base3;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $base3;
-$topbar-link-color-hover: $base3;
-$topbar-link-color-active: $base3;
-$topbar-link-color-active-hover: $base3;
+$topbar-link-color: $base01;
+$topbar-link-color-hover: $base03;
+$topbar-link-color-active: $green;
+$topbar-link-color-active-hover: $red;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
-// $topbar-link-hover-lightness: -10%; // Darken by 10%
+$topbar-link-font-size: rem-calc(16);
+$topbar-link-hover-lightness: -10%; 
 // $topbar-link-bg: $topbar-bg;
-$topbar-link-bg-color-hover: $base02;
-// $topbar-link-bg-hover: $oil;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-color-hover: $base2;
+$topbar-link-bg-hover: $base3;
+$topbar-link-bg-active: $red;
+// $topbar-link-bg-active-hover: scale-color($base3, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: $h5-font-size;
 // $topbar-link-dropdown-padding: 20px;
 
-// $topbar-button-font-size: 0.75rem;
+$topbar-button-font-size: 1.5rem;
 // $topbar-button-top: 7px;
 
 $topbar-dropdown-label-color: $base01;
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: $font-weight-bold;
 // $topbar-dropdown-label-font-size: rem-calc(10);
-$topbar-dropdown-label-bg: $base03;
+$topbar-dropdown-label-bg: $base3;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-$topbar-menu-link-color: $base3;
-$topbar-menu-icon-color: $base3;
+$topbar-menu-link-color: $base01;
+$topbar-menu-icon-color: $base01;
 $topbar-menu-link-color-toggled: $base0;
 $topbar-menu-icon-color-toggled: $base0;
 

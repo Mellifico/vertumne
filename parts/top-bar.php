@@ -2,7 +2,7 @@
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
-                <h1><a href="<?php echo home_url(); ?>"><i class="fi-star"></i>&nbsp;<?php bloginfo('name'); ?></a></h1>
+                <h1 class="uppercase ligatures"><a href="<?php echo home_url(); ?>"><i class="fi-bookmark"></i>&nbsp;<?php bloginfo('name'); ?></a></h1>
             </li>
         </ul>
         <section class="top-bar-section">

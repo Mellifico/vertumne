@@ -3,8 +3,8 @@
 <div class="wrapper">
 <footer class="row">
 <div class="large-12 column">
-<svg width="3.2em" height="3.2em"><use xlink:href="#ruche"></use></svg>
-<svg width="3.2em" height="3.2em"><use xlink:href="#alveole"></use></svg>
+<!-- <svg width="3.2em" height="3.2em"><use xlink:href="#ruche"></use></svg>
+<svg width="3.2em" height="3.2em"><use xlink:href="#alveole"></use></svg> -->
 
 	<?php do_action('foundationPress_before_footer'); ?>
 	<?php dynamic_sidebar("footer-widgets"); ?>

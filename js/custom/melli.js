@@ -8,8 +8,15 @@ $('.slider-basic').slick({
 	  autoplay: true,
 	  autoplaySpeed: 4000,
 	  arrows:false,
-	  dots: false
+	  dots: false,
 	});
+
+$('.slider-a').slick({
+    autoplay: false,
+    fade: true,
+    arrows:true,
+    dots: true
+  });
 
 //lettering
 $(".lettres").lettering();

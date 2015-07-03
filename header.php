@@ -31,7 +31,7 @@
 		
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class('pattern-cube'); ?>>
+	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
 	<?php include("svg/vectors-chest.svg"); ?>
 <!-- <div class="animsition"> -->

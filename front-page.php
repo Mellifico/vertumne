@@ -12,26 +12,37 @@
 <div class="contain-to-grid sticky">
 <?php get_template_part('parts/top-bar'); ?>
 </div>
-<div>
-		<?php if ( have_posts() ) : ?>
-
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile; ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-
-	<?php endif; // end have_posts() check ?>
-
-	<?php /* Display navigation to next/previous pages when applicable */ ?>
-	<?php if ( function_exists('FoundationPress_pagination') ) { FoundationPress_pagination(); } else if ( is_paged() ) { ?>
-		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'FoundationPress' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'FoundationPress' ) ); ?></div>
-		</nav>
-	<?php } ?>
+<div class="wrapper">
+<div class="row">
+<div class="medium-6 large-6 columns">
+<div class="slider-a">
+<?php
+$args = array(
+    'post_type' => 'attachment',
+    'post_status' => 'inherit',
+    'posts_per_page' => -1,
+    'orderby' => 'rand',
+    'tax_query' => array(
+		array(
+			'taxonomy' => 'classification',
+			'field' => 'slug',
+			'terms' => array( 'photographie' )
+		)
+	)
+);
+$attachments = get_posts($args);
+if ($attachments) {
+    foreach ($attachments as $attachment) {   
+        $img = wp_get_attachment_url($attachment->ID);
+        $title = get_the_title($attachment->post_parent);
+        echo '<div><img src="'.$img.'" alt="'.$title.'"/></div>';
+    }   
+}
+?>
+</div>
+</div>
+<div class="medium-6 large-6 columns"></div>
+</div>
 </div>
 <?php do_action('foundationPress_after_content'); ?>
 </div>

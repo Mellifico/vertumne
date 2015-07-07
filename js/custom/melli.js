@@ -15,7 +15,7 @@ $('.slider-a').slick({
     autoplay: false,
     fade: true,
     arrows:true,
-    dots: true
+    dots: true,
   });
 
 //lettering

@@ -70,7 +70,35 @@
 .bg-fixed {
 background-attachment: fixed;
 }
+.bg-anim-gradient-a {
+ background: linear-gradient(142deg, #fdf6e3, scale-color($yellow, $lightness: 75%), #eee8d5);
+background-size: 600% 600%;
 
+-webkit-animation: anim-gradient-a 22s ease infinite;
+-moz-animation: anim-gradient-a 22s ease infinite;
+-o-animation: anim-gradient-a 22s ease infinite;
+animation: anim-gradient-a 22s ease infinite;
+}
+@-webkit-keyframes anim-gradient-a {
+    0%{background-position:24% 0%}
+    50%{background-position:77% 100%}
+    100%{background-position:24% 0%}
+}
+@-moz-keyframes anim-gradient-a {
+    0%{background-position:24% 0%}
+    50%{background-position:77% 100%}
+    100%{background-position:24% 0%}
+}
+@-o-keyframes anim-gradient-a {
+    0%{background-position:24% 0%}
+    50%{background-position:77% 100%}
+    100%{background-position:24% 0%}
+}
+@keyframes anim-gradient-a {
+    0%{background-position:24% 0%}
+    50%{background-position:77% 100%}
+    100%{background-position:24% 0%}
+}
 // gradients patterns tricks
 
 .pattern-cube {

@@ -3,6 +3,7 @@
 <div class="wrapper">
 <footer class="row">
 <div class="large-12 column">
+<h5><a class="outline" href="mailto:mellifico@gmail.com">courriel</a></h5>
 <!-- <svg width="3.2em" height="3.2em"><use xlink:href="#ruche"></use></svg>
 <svg width="3.2em" height="3.2em"><use xlink:href="#alveole"></use></svg> -->
 

@@ -88,3 +88,10 @@ a.outline:focus  {
 a.outline:active {
    outline-color: $red;
 }
+a {
+  text-decoration-color: $base02;
+  text-decoration-style: dotted;
+}
+.textshadow-basic {
+  text-shadow: -1px -1px 1px $base3, 1px 1px 1px $base02;
+}

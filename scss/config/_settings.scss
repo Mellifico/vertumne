@@ -140,7 +140,7 @@ $base1:     #93a1a1;
 $base2:     #eee8d5;
 $base3:     #fdf6e3;
 $yellow:    #b58900;
-$orange:    #cb4b16;
+$orange:    #cb4b16; 
 $red:       #dc322f;
 $magenta:   #d33682;
 $violet:    #6c71c4;
@@ -169,7 +169,7 @@ $green:     #859900;
 // $black : #000000;
 
 // We use these as default colors throughout
-$primary-color: $orange;
+$primary-color: $blue;
 $secondary-color: $cyan;
 $alert-color: $magenta;
 $success-color: $green;
@@ -253,7 +253,7 @@ $body-font-family: $font-family-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 $header-font-color: $base01;
-// $header-line-height: 1.4;
+$header-line-height: 1.5;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
@@ -275,15 +275,15 @@ $header-font-color: $base01;
 // $h6-font-reduction: 0 !default;
 
 // These control how subheaders are styled.
-// $subheader-line-height: 1.4;
-$subheader-font-color: scale-color($header-font-color, $lightness: 15%);
+$subheader-line-height: 1;
+$subheader-font-color: $header-font-color;
 // $subheader-font-weight: $font-weight-normal;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
 // $small-font-size: 60%;
-$small-font-color: scale-color($header-font-color, $lightness: 15%);
+$small-font-color: $header-font-color;
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;

@@ -37,24 +37,61 @@
 <!-- <div class="animsition"> -->
 	<div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
-	
-	<?php do_action('foundationPress_layout_start'); ?>
-	
-	<nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
+    <!-- Navigation -->
 
-		</section>
-	</nav>
+    <div class="contain-to-grid sticky">
 
-	<?php get_template_part('parts/off-canvas-menu'); ?>
-	<?php if ( ! is_front_page()) { ?>
-	<?php get_template_part('parts/top-bar'); ?>
-	<?php }  ?>
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a class="logo show-for-small-only" href="#">
+            <svg class="icon">
+  <use xlink:href="#logomelli" />
+</svg></a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
 
+        <section class="top-bar-section">
+
+          <div class="logo-wrapper hide-for-small-only">
+              <svg class="icon">
+  <use xlink:href="#logomelli" />
+</svg>
+          </div>
+
+
+
+          <!-- Right Nav Section -->
+
+          <ul class="right">
+
+            <li><a href="#">Portfolio</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+
+          </ul>
+
+
+
+          <!-- Left Nav Section -->
+
+          <ul class="left">
+
+            <li><a href="#">&Eacute;choppe</a></li>
+
+            <li><a href="#">Journal</a></li>
+
+          </ul>
+
+
+
+        </section>
+
+      </nav>
+
+
+
+    </div><!-- /navigation -->	
 <section class="container" role="document">
-	<?php do_action('foundationPress_after_header'); ?>

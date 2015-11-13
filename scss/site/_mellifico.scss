@@ -1,18 +1,39 @@
+.text-light {
+  color: $base3;
+}
+.text-light-min {
+  color: $base2;
+}
+.bg-circle {
+border-radius: 50%;
+padding: 1rem;
+}
+.bg-circle img {
+border-radius: 50%;
+border:2px solid $base3;
+}
+.centered  {
+    position: absolute;
+    width:100%;
+    z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 // slick-sliders adjustements
 .slick-slider.slider-basic {
 	margin:0;
 }
 .wrapper {
 	position: relative;
-	padding: rem-calc(40) 0;
+  padding: 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
-.top-bar svg {
-	width: 1.8rem;
-	float:left;
-	position: relative;
-	margin: 0;
-	padding: 0;
+.full-h {
+  min-height: 100vh;
 }
+
 .calendas-bold,
  b,
 strong {
@@ -59,7 +80,7 @@ font-variant: small-caps;
 	text-transform: uppercase;
 }
 .bg-text-padding {
-	padding: rem-calc(20); 
+	padding: rem-calc(40) rem-calc(20); 
 }
 a.outline:link, a.outline:visited, a.outline:focus, a.outline:active {
   outline-width: 1px;
@@ -94,4 +115,39 @@ a {
 }
 .textshadow-basic {
   text-shadow: -1px -1px 1px $base3, 1px 1px 1px $base02;
+}
+
+@media only screen and (min-width: 40.063em) { 
+
+  .logo-wrapper {
+    position: relative;
+  }
+  .logo-wrapper .icon {
+    position: absolute;
+    z-index: 0;
+    left: 47.8%;
+    right: 50%;
+    top: 2px;
+  }
+  #logomelli:hover {
+  fill: $blue;
+}
+.top-bar svg.icon {
+  width: inherit;
+  height:inherit;
+}
+  // Right part
+  .top-bar-section ul.right {
+    width: 45%;
+  }
+  .top-bar-section ul.right li {
+    float:  left;
+  }
+  // Left part
+  .top-bar-section ul.left {
+    width:  45%;
+  }
+  .top-bar-section ul.left li {
+    float:  right;
+  }
 }

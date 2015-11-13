@@ -23,6 +23,7 @@ $(".lettres").lettering();
 
 // fittext
 $("#big").fitText(1.2);
+$(".fat").fitText(1.2);
 
 // masonry + imagesloaded
 

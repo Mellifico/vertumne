@@ -1,14 +1,15 @@
 </section>
 
-<div class="wrapper full-h bg-dark">
+<div class="wrapper full-h bg-blue padded">
 <footer>
 <div class="row">
 <div class="large-6 columns">
-<ul class="vcard ligatures">
-   <li class="social"><i class="fi-social-twitter"></i>&nbsp;<a href="https://twitter.com/Mellifico">Twitter</a></li>
-  <li class="social"><i class="fi-social-github"></i>&nbsp;<a href="https://github.com/Mellifico">Github</a></li>
-  <li class="social"><i class="fi-social-pinterest"></i>&nbsp;<a href="https://fr.pinterest.com/mellifico/">Pinterest</a></li>
-  <li class="social"><i class="fi-social-steam"></i>&nbsp;<a href="https://steamcommunity.com/id/mellifico">Steam</a></li>
+<ul class="inline-list no-bullet ligatures">
+   <li class="social"><a href="https://twitter.com/Mellifico"><i class="fi-social-twitter"></i>&nbsp;Twitter</a></li>
+  <li class="social"><a href="https://github.com/Mellifico"><i class="fi-social-github"></i>&nbsp;Github</a></li>
+  <li class="social"><a href="http://codepen.io/mellifico/"><i class="fi-social-codepen"></i>&nbsp;Codepen</a></li>
+  <li class="social"><a href="https://fr.pinterest.com/mellifico/"><i class="fi-social-pinterest"></i>&nbsp;Pinterest</a></li>
+  <li class="social"><a href="https://steamcommunity.com/id/mellifico"><i class="fi-social-steam"></i>&nbsp;Steam</a></li>
 </ul>
 </div>
 <div class="large-6 columns">

@@ -26,9 +26,12 @@ border:2px solid $base3;
 }
 .wrapper {
 	position: relative;
-  padding: 0;
+ 
   max-width: 1920px;
   margin: 0 auto;
+}
+.wrapper.padded {
+   padding: rem-calc(80) 0;
 }
 .full-h {
   min-height: 100vh;
@@ -123,18 +126,15 @@ a {
     position: relative;
   }
   .logo-wrapper .icon {
+    width:50px;
+    height:50px;
     position: absolute;
-    z-index: 0;
     left: 47.8%;
     right: 50%;
     top: 2px;
   }
-  #logomelli:hover {
+  .icon:hover #logomelli {
   fill: $blue;
-}
-.top-bar svg.icon {
-  width: inherit;
-  height:inherit;
 }
   // Right part
   .top-bar-section ul.right {
@@ -150,4 +150,25 @@ a {
   .top-bar-section ul.left li {
     float:  right;
   }
+}
+figure.item {
+  padding: 10px;
+  margin: 0;
+}
+figure.item img {
+  padding: 20px;
+  margin: 0;
+  background-color: $white;
+}
+figure.polaroid {
+  display: inline-block;
+  background-color: $base3;
+}
+figure.polaroid img {
+ margin: 10px 10px 40px 10px;
+}
+figcaption {
+  padding: 20px;
+  margin: 0;  
+  background-color: $base3;
 }

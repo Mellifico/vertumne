@@ -73,7 +73,7 @@
 background-attachment: fixed;
 }
 .bg-anim-gradient-a {
- background: linear-gradient(142deg, #fdf6e3, scale-color($yellow, $lightness: 75%), #eee8d5);
+ background: linear-gradient(142deg, #fdf6e3, scale-color($base1, $lightness: 75%), #eee8d5);
 background-size: 600% 600%;
 
 -webkit-animation: anim-gradient-a 22s ease infinite;

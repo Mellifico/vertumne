@@ -45,9 +45,7 @@
         <ul class="title-area">
           <li class="name">
             <h1><a class="logo show-for-small-only" href="#">
-            <svg class="icon">
-  <use xlink:href="#logomelli" />
-</svg></a></h1>
+            <svg width="50" height="50"><use xlink:href="#logomelli" /></svg></a></h1>
           </li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
@@ -55,9 +53,11 @@
         <section class="top-bar-section">
 
           <div class="logo-wrapper hide-for-small-only">
-              <svg class="icon">
-  <use xlink:href="#logomelli" />
-</svg>
+              <div class="icon">
+            <svg width="50" height="50"><use xlink:href="#logomelli"/></svg>
+</div>
+
+
           </div>
 
 
